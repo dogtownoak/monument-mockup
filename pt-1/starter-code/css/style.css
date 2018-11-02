@@ -1,0 +1,106 @@
+h1 {
+    color:#44545E;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 15px; 
+    font-size: 43px; 
+    text-align: center;
+}
+
+.date, h2, h3, h4, .social {
+    color:#44545E;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.date {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3, h4 {
+    font-size: 20px;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav {
+    list-style-type: none;
+    color: #7e9bac;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav > li {
+    margin: 3px;
+}
+
+p {
+    overflow: auto
+    margin: 0 15%;
+    padding: 0%; 
+
+}
+
+.issues {
+    list-style-type: disc;
+    color: #7e9bac;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color:#cdf3f6;
+    border:2px black;
+    margin:10px;
+    padding: 0;
+    width: 100%;
+}
+
+.social {
+    color: #44545E;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+
+}
+
+.social > li {
+    margin: 3px;
+    color: #7e9bac;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.copy {
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+h1, {
+    letter-spacing: 10px;
+}
+
+.wrapper {
+    margin: 0 15%;
+    padding: 0%;
+    width: 100%;
+}
