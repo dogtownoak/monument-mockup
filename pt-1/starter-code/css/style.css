@@ -46,13 +46,6 @@ body {
     margin: 3px;
 }
 
-p {
-    overflow: auto
-    margin: 0 15%;
-    padding: 0%; 
-
-}
-
 .issues {
     list-style-type: disc;
     color: #7e9bac;
@@ -103,4 +96,12 @@ h1, {
     margin: 0 15%;
     padding: 0%;
     width: 100%;
+}
+
+p {
+    max-width: 1400px;
+    line-height: 22px;
+    color:#44545E;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
 }
