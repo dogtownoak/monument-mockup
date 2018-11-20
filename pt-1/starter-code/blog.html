@@ -12,19 +12,22 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <!-- font awesome: instagram -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- font awesome: hamburger menu icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
     <link href="#Font" type="text/css" rel="stylesheet">
     <title>Monument</title>
 </head>
     <body>
         <header>
             <nav>
+                <p class="hamburger"><span class="fas fa-bars"></span></p>
                 <ul class="nav">
                     <li>ABOUT</li>
                     <li>GALLERY</li>
                     <li>BLOG</li>
                     <li>CONTACT</li>
-                </ul>
+                </ul>                                 
             </nav>
         </header>
             <div class="background_img_wtext">
@@ -57,15 +60,24 @@
                         <li>Issue Fourteen &mdash; Gatherings</li>
                     </ul>
                 </aside>
-            <!-- </div> -->
+
         </main> 
+
+            <form class="footWrap">
+                <div class="flexCenter">
+                <input class="name" type="text" placeholder="NAME"/>
+                <input class="email" type="email" placeholder="EMAIL" />
+                </div div class="fexCenter">
+                <input class="comment" type="text" placeholder="COMMENT"/>
+                <input class="submit" type="Submit" value="Submit" />
+            </form>
         <footer>
             <ul class="social">
                 <li><span class="fab fa-facebook-square"></span></li>
                 <li><span class="fab fa-twitter-square"></span></li>
                 <li><span class="fab fa-instagram"></span></li>
             </ul>
-            <form method="POST" action="/page" >
+            <form class="keepInTouch">
                 <input type="email" placeholder="Email Addrss" />
                 <input type="Submit" value="KEEP IN TOUCH" />
             </form>

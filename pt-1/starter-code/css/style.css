@@ -12,14 +12,11 @@
 }
 
 
-
 body {
-    /* margin: 0%; */
-    /* padding: 0; */
-    min-height: 100%;
+    min-height: 100vh;
     width: 100vh;
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---------- Header ---------- */
@@ -42,8 +39,13 @@ body {
     margin: 3px;
 }
 
-.background_img_wtext {
-    background-image: url(../images/blog_header_bg.jpg);
+.hamburger span {
+    display: hidden;
+}
+
+
+.background_img_wtext_lp {
+    background-image: url(../images/home_header_bg.jpg);
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
@@ -61,74 +63,71 @@ h1 {
     text-align: center;
 }
 
-
 /* ---------- Main ---------- */
-.wrapper {
-    margin: 0 16vw 0 8vw;
-    padding: 0;
-    width: 100vw;
-    max-width: 1400px;
-    height: 100vh;
-    min-height: 100%;
-    flex:1;
+
+.articles {
     display: flex;
-    
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.articleOne {
+    flex: 1;
+    width: 33vw;
+    height: 100vh;
+}
+
+.articleTwo {
+    flex: 1;
+    width: 33vw;
+    height: 100vh;
+}
+
+.articleThree {
+    flex: 1;
+    width: 33vw;
+    height: 100vh;
+}
+
+article img {
+    width: 20vw;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100vw;
+    height: atuo;
+    min-height: 100%; 
 }
 
 section {
-    width: 54vw;
+    width: 100vw;
     height: 100vh;
-    /* flex: 1 0 auto; */
     padding: 15vh 0vh 5vh 0;
-    flex: 1
 }
 
 
 article img, article p {
-    width: 54vw;
+    width: 33vw;
     max-width: 1400px;
 }
 
 article p {
-    overflow: hidden;
-}
-
-aside {
-    width: 22vw;
-    height: 100vh;
-    padding: 20vh 0 5vh 5vw;
-    flex:1;
-}
-
-aside img, aside p {
-    width: 22vw;
-    max-width: 1400px;
-}
-aside p {
-    overflow: hidden;
-}
-
-
-
-.date {
-    font-size: 20px;
-    margin: 0 0 1em 0;
-
+    overflow: scroll;
+    max-height: 100vh;
 }
 
 h2 {
     font-size: 25px;
     margin: 0 0 1em 0;
-
 }
 
 img {
-    margin: 1em 0;
+    max-height: 400px;
+    max-width: 400px;
 }
 
-aside img {
-    margin: 5em 0;
-}
 p {
     line-height: 1.5em;
     color:#44545E;
@@ -136,39 +135,23 @@ p {
     font-weight: 400;
 }
 
-.issues {
-    list-style-type: disc;
-    color: #7e9bac;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    letter-spacing: 1px;
-}
-
-.issues li {
-    margin:1em 0;
-}
-
 h3 {
     font-size: 20px;
     margin: 0 0 1em 0;
 }
 
-h4 {
-    font-size: 20px;
-
-}
 
 /* ---------- Footer ---------- */
 footer {
-    background-color:#cdf3f6;
     width: 100vw;
     height: 20vh;
     position: relative;
     /* margin-top: auto; */
-    margin-top: 120vh;  
+    margin-top: 0vh;  
 }
 
 .social {
+    background-color:#cdf3f6;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -198,18 +181,18 @@ form {
     align-items: start;
 } 
 
-input[placeholder], input[value] {
+form input[placeholder], form input[value] {
     text-align: center;
 }
 
-input[placeholder] {
+form input[placeholder] {
     width: 20vw;
     margin: 0 2em;
     padding: .5em 0;
     font-size: 1em;
 } 
 
-input[value] {
+form input[value] {
     width: 15vw;
     background-color: #cdf3f6;
     border: 2px solid black;
@@ -217,8 +200,6 @@ input[value] {
     padding: .5em 0;
     margin: 0 2em;
 }
-
-
 
 
 .copy {
@@ -229,3 +210,63 @@ input[value] {
     padding: 1em 0;
     background-color: #CDF3F6;
 }
+
+@media screen and (max-width: 560px) {
+    
+
+
+
+    .wrapper {
+        margin: 0 16vw 100vh 8vw;
+        padding: 0;
+        width: 100vw;
+        max-width: 1400px;
+        height: 100vh;
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer {
+        width: 100vw;
+        height: 20vh;
+        position: relative;
+        /* margin-top: auto; */
+        margin-top: 80vh;  
+    }
+    section {
+        width: 76vw;
+        height: 100vh;
+        /* flex: 1 0 auto; */
+        padding: 15vh 0vh 5vh 0;
+        flex: 1;
+
+    }
+    
+    
+    article img, article p {
+        width: 76vw;
+        max-width: 1400px;
+    }
+    
+    article p {
+        overflow: hidden;
+    }
+    
+    aside {
+        width: 76vw;
+        height: 100vh;
+        padding: 20vh 0 5vh 5vw;
+        margin: 20vh 0 20vh 0;
+        flex:1;
+        order:2;
+    }
+    
+    aside img, aside p {
+        width: 76vw;
+        max-width: 1400px;
+    }
+    aside p {
+        overflow: hidden;
+    }
+  }
+
